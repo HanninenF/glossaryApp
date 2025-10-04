@@ -1,0 +1,18 @@
+@if (loading){
+<div>⏳ Hämtar data...</div>
+} @else if (error){
+<div class="error">{{ error }}</div>
+
+}@else {
+<ul>
+  @for(item of glossary; track item.term){
+  <li>
+    <strong> {{ item.term }} </strong><br />
+
+    {{ item.definition }} <br />
+
+    <em> {{ item.domain }} - {{ item.kind }} </em>
+  </li>
+  }
+</ul>
+}
