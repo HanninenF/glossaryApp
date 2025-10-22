@@ -1,0 +1,11 @@
+.glossary_con {
+  display: flex;
+  justify-content: center;
+
+  .glossary_card {
+    max-width: 30em;
+    .glossary {
+      margin: 2em 0 2em 0;
+    }
+  }
+}
